@@ -7,14 +7,16 @@
   <title>English for Childcare | Learning Flow Diagrams</title>
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       padding: 24px;
       background: #f5f5f5;
       font-family: Arial, sans-serif;
       color: #222;
-      line-height: 1.7;
+      line-height: 1.6;
     }
+
     main {
       max-width: 1000px;
       margin: 35px auto;
@@ -23,70 +25,88 @@
       border: 1px solid #ddd;
       border-radius: 18px;
     }
+
     h1 { font-size: 36px; margin-bottom: 5px; }
-    h2 {
-      font-size: 24px;
-      margin-top: 38px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
+    h2 { font-size: 23px; margin-top: 35px; }
+
+    .subtitle {
+      color: #555;
+      font-size: 19px;
     }
-    p { font-size: 17px; }
-    .subtitle { color: #555; font-size: 19px; }
+
+    .diagram {
+      margin: 35px 0 50px;
+    }
+
+    .diagram iframe {
+      width: 100%;
+      height: 650px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
     a { color: #0057b8; }
-    .documents { list-style: none; padding: 0; }
-    .documents li {
-      padding: 20px 0;
-      border-bottom: 1px solid #eee;
-      font-size: 17px;
-    }
-    .documents a { font-weight: bold; }
+
     .footer { margin-top: 45px; }
+
     @media (max-width: 600px) {
       main { padding: 25px; }
       h1 { font-size: 29px; }
+      .diagram iframe { height: 450px; }
     }
   </style>
 </head>
+
 <body>
 <main>
+
   <h1>English for Childcare</h1>
+
   <p class="subtitle">
     Articulate Rise 360 | Learning Flow Diagrams
   </p>
 
   <p>
-    Supporting diagrams illustrating the blended and
-    asynchronous learning approaches used in the course design.
+    Two diagrams illustrating the blended learning structure
+    and asynchronous learning sequence.
   </p>
 
-  <h2>Learning Flow Diagrams</h2>
+  <div class="diagram">
+    <h2>1. Blended Learning Flow</h2>
 
-  <ul class="documents">
-    <li>
+    <iframe
+      src="flows/english-for-childcare-blended-learning.pdf"
+      title="Blended Learning Flow Diagram">
+    </iframe>
+
+    <p>
       <a href="flows/english-for-childcare-blended-learning.pdf"
          target="_blank" rel="noopener noreferrer">
-        Blended Learning Flow (PDF)
+        Open full-size PDF
       </a>
-      <div>
-        Overview of the blended learning structure.
-      </div>
-    </li>
+    </p>
+  </div>
 
-    <li>
+  <div class="diagram">
+    <h2>2. Asynchronous Learning Flow</h2>
+
+    <iframe
+      src="flows/english-for-childcare-asynchronous-learning.pdf"
+      title="Asynchronous Learning Flow Diagram">
+    </iframe>
+
+    <p>
       <a href="flows/english-for-childcare-asynchronous-learning.pdf"
          target="_blank" rel="noopener noreferrer">
-        Asynchronous Learning Flow (PDF)
+        Open full-size PDF
       </a>
-      <div>
-        Overview of the independent digital learning sequence.
-      </div>
-    </li>
-  </ul>
+    </p>
+  </div>
 
   <div class="footer">
     <a href="documentation.html">← Back to Design Documentation</a>
   </div>
+
 </main>
 </body>
 </html>
-
